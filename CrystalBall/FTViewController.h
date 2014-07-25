@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class FTCrystalBall;
+
 @interface FTViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) FTCrystalBall *crystalBall;
+
+- (IBAction)buttonPressed;
 
 @end
