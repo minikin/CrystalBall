@@ -10,7 +10,6 @@
 
 @implementation FTCrystalBall
 
-
 - (NSArray *)predictions{
     if (_predictions == nil){
         _predictions = [[NSArray alloc] initWithObjects:

@@ -21,6 +21,8 @@
 		CE97CE0D1982695400A53374 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE97CDEF1982695400A53374 /* UIKit.framework */; };
 		CE97CE151982695400A53374 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE97CE131982695400A53374 /* InfoPlist.strings */; };
 		CE97CE171982695400A53374 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97CE161982695400A53374 /* CrystalBallTests.m */; };
+		CEC89D10198676680062F1E0 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEC89D0F198676680062F1E0 /* crystal_ball.mp3 */; };
+		CEC89D12198676BD0062F1E0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC89D11198676BD0062F1E0 /* AudioToolbox.framework */; };
 		CEFCB1D919828614008D0CCF /* FTCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB1D819828614008D0CCF /* FTCrystalBall.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		CE97CE121982695400A53374 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		CE97CE141982695400A53374 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE97CE161982695400A53374 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		CEC89D0F198676680062F1E0 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		CEC89D11198676BD0062F1E0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CEFCB1D719828614008D0CCF /* FTCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCrystalBall.h; sourceTree = "<group>"; };
 		CEFCB1D819828614008D0CCF /* FTCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCrystalBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC89D12198676BD0062F1E0 /* AudioToolbox.framework in Frameworks */,
 				CE97CDEE1982695400A53374 /* CoreGraphics.framework in Frameworks */,
 				CE97CDF01982695400A53374 /* UIKit.framework in Frameworks */,
 				CE97CDEC1982695400A53374 /* Foundation.framework in Frameworks */,
@@ -106,6 +111,7 @@
 		CE97CDEA1982695400A53374 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEC89D11198676BD0062F1E0 /* AudioToolbox.framework */,
 				CE97CDEB1982695400A53374 /* Foundation.framework */,
 				CE97CDED1982695400A53374 /* CoreGraphics.framework */,
 				CE97CDEF1982695400A53374 /* UIKit.framework */,
@@ -129,6 +135,7 @@
 		CE97CDF21982695400A53374 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEC89D0F198676680062F1E0 /* crystal_ball.mp3 */,
 				CE97CDFA1982695400A53374 /* FTAppDelegate.h */,
 				CE97CDFB1982695400A53374 /* FTAppDelegate.m */,
 				CE97CDF31982695400A53374 /* CrystalBall-Info.plist */,
@@ -237,6 +244,7 @@
 			files = (
 				CE97CE041982695400A53374 /* Images.xcassets in Resources */,
 				CE97CDF61982695400A53374 /* InfoPlist.strings in Resources */,
+				CEC89D10198676680062F1E0 /* crystal_ball.mp3 in Resources */,
 				CE97CDFF1982695400A53374 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

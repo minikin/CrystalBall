@@ -13,7 +13,11 @@
 @interface FTViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) FTCrystalBall *crystalBall;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
-- (IBAction)buttonPressed;
+
+//- (IBAction)buttonPressed;
+
+- (void) makePrediction;
 
 @end
