@@ -22,7 +22,7 @@
                         @"Spiritual retreat!",
                         @"Step into the light!",
                         @"Dreamtime!",
-                        @"Everything that can be invented has been invented",
+                        @"Everything will be good",
                         nil];
     }
     return _predictions;

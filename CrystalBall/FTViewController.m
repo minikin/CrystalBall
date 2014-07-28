@@ -90,7 +90,7 @@
                                                 [UIImage imageNamed:@"CB00059"],
                                                 [UIImage imageNamed:@"CB00060"],
                                                 nil];
-    self.backgroundImageView.animationDuration = 2.5f;
+    self.backgroundImageView.animationDuration = 2.0f;
     self.backgroundImageView.animationRepeatCount = 1;
     
 //    UIImage *backgroundImage = [UIImage imageNamed:@"background"];
@@ -118,7 +118,7 @@
     self.predictionLabel.text = [self.crystalBall randomPrediction];
     AudioServicesPlaySystemSound(soundEffect);
     
-    [UIView animateWithDuration:7.0 animations:^{
+    [UIView animateWithDuration:6.0 animations:^{
         self.predictionLabel.alpha = 1.0f;
     }];
 }
