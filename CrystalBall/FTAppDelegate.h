@@ -2,8 +2,8 @@
 //  FTAppDelegate.h
 //  CrystalBall
 //
-//  Created by Minikin on 7/25/14.
-//  Copyright (c) 2014 fatheroftwo. All rights reserved.
+//  Created by Sasha Prokhorenko on 7/25/14.
+//  Copyright (c) 2014 Minikin.me. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

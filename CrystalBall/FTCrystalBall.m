@@ -2,8 +2,8 @@
 //  FTCrystalBall.m
 //  CrystalBall
 //
-//  Created by Minikin on 7/25/14.
-//  Copyright (c) 2014 fatheroftwo. All rights reserved.
+//  Created by Sasha Prokhorenko on 7/25/14.
+//  Copyright (c) 2014 Minikin.me. All rights reserved.
 //
 
 #import "FTCrystalBall.h"
@@ -23,6 +23,22 @@
                         @"Step into the light!",
                         @"Dreamtime!",
                         @"Everything will be good",
+                        @"Don't give up!",
+                        @"Enjoy yourself",
+                        @"Have a midnight picnic",
+                        @"Go skinny dipping",
+                        @"Invite a fairy family to tea",
+                        @"Dance in the rain",
+                        @"Learn to belly dance",
+                        @"Donate blood",
+                        @"Go barefoot for a day",
+                        @"Eat Raw for a month",
+                        @"Make a rag rug",
+                        @"Go geocaching",
+                        @"Feed the birds",
+                        @"Skip everywhere for a day",
+                        @"The good, the bad",
+                        @"Everything will be okay",
                         nil];
     }
     return _predictions;
@@ -30,7 +46,8 @@
 
 - (NSString *) randomPrediction{
 
-    int random = arc4random_uniform(self.predictions.count);
+//    int random = arc4random_uniform(_predictions.count);
+  int random = arc4random_uniform((uint32_t)_predictions.count);
     return [self.predictions objectAtIndex:random];
 }
 

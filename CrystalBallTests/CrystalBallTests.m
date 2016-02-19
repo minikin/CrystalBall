@@ -2,13 +2,16 @@
 //  CrystalBallTests.m
 //  CrystalBallTests
 //
-//  Created by Minikin on 7/25/14.
-//  Copyright (c) 2014 fatheroftwo. All rights reserved.
+//  Created by Sasha Prokhorenko on 7/25/14.
+//  Copyright (c) 2014 Minikin.me. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "FTCrystalBall.h"
 
 @interface CrystalBallTests : XCTestCase
+@property (nonatomic)FTCrystalBall *crystall;
+
 
 @end
 
@@ -17,18 +20,34 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.crystall = [[FTCrystalBall alloc] init];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.crystall = nil;
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testCrystallBallNotNil {
+    XCTAssertNotNil(self.crystall, @"crystall model is nil");
 }
+
+- (void)testPredictionsNotNil{
+    XCTAssertNotNil(self.crystall.predictions,@"Prediction is nil!");
+}
+
+- (void)testRandomPredictionNotNil {
+    NSString *prediction = [self.crystall randomPrediction];
+    XCTAssertNotNil(prediction, @"random prediction is nil");
+}
+
+- (void)testRandomPredictIsString{
+    
+    id prediction = [self.crystall randomPrediction];
+    XCTAssertTrue([prediction isKindOfClass:[NSString class]], @"prediction is a class '%@'", [prediction class]);
+}
+
+
 
 @end

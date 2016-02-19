@@ -2,8 +2,8 @@
 //  FTViewController.m
 //  CrystalBall
 //
-//  Created by Minikin on 7/25/14.
-//  Copyright (c) 2014 fatheroftwo. All rights reserved.
+//  Created by Sasha Prokhorenko on 7/25/14.
+//  Copyright (c) 2014 Minikin.me. All rights reserved.
 //
 
 #import "FTViewController.h"
@@ -25,8 +25,9 @@
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"crystal_ball" ofType:@"mp3"];
     NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+  
     AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
-    
+  
     self.crystalBall = [[FTCrystalBall alloc]init];
     self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:
                                                 [UIImage imageNamed:@"CB00001"],
@@ -92,11 +93,6 @@
                                                 nil];
     self.backgroundImageView.animationDuration = 2.0f;
     self.backgroundImageView.animationRepeatCount = 1;
-    
-//    UIImage *backgroundImage = [UIImage imageNamed:@"background"];
-//    UIImageView *imageView = [[UIImageView alloc] initWithImage:backgroundImage];
-//    [self.view insertSubview:imageView atIndex:0];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,19 +101,14 @@
     
 }
 
-//- (IBAction)buttonPressed {
-//    
-//    self.predictionLabel.text = [self.crystalBall randomPrediction];
-//    
-//}
-
 #pragma mark - Prediction
 
 - (void) makePrediction {
     [self.backgroundImageView startAnimating];
     self.predictionLabel.text = [self.crystalBall randomPrediction];
-    AudioServicesPlaySystemSound(soundEffect);
-    
+    AudioServicesPlaySystemSound((uint32_t)soundEffect);
+  
+      
     [UIView animateWithDuration:6.0 animations:^{
         self.predictionLabel.alpha = 1.0f;
     }];
