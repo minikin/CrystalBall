@@ -46,8 +46,7 @@
 
 - (NSString *) randomPrediction{
 
-//    int random = arc4random_uniform(_predictions.count);
-  int random = arc4random_uniform((uint32_t)_predictions.count);
+  int random = arc4random() % [_predictions count];
     return [self.predictions objectAtIndex:random];
 }
 
