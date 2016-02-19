@@ -396,7 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.minikin.me.CrystalBall;
+				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.CrystalBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,7 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.minikin.me.CrystalBall;
+				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.CrystalBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
