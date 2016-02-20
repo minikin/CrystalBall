@@ -7,11 +7,14 @@
 //
 
 #import "FTAppDelegate.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation FTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [BuddyBuildSDK setup];
+    
     // Override point for customization after application launch.
     return YES;
 }

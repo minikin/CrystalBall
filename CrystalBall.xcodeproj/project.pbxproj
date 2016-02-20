@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491EC85635C900CF5CC2086C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589A502C238638FE5D6E0DF /* CoreTelephony.framework */; };
+		4D39764032FE0C9DCB48CCD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7F9151CC358FB5954C7A0A /* QuartzCore.framework */; };
+		7ECDC8CF0E6051FA9B4C7B4B /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC312DF0416F90112C6C5EAC /* BuddyBuildSDK.framework */; };
+		89995A00E29D2DF6F1E97DE9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC7BCF34DE5EC0006C7988E /* AssetsLibrary.framework */; };
 		CE97CDEC1982695400A53374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE97CDEB1982695400A53374 /* Foundation.framework */; };
 		CE97CDEE1982695400A53374 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE97CDED1982695400A53374 /* CoreGraphics.framework */; };
 		CE97CDF01982695400A53374 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE97CDEF1982695400A53374 /* UIKit.framework */; };
@@ -24,6 +28,8 @@
 		CEC89D10198676680062F1E0 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEC89D0F198676680062F1E0 /* crystal_ball.mp3 */; };
 		CEC89D12198676BD0062F1E0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC89D11198676BD0062F1E0 /* AudioToolbox.framework */; };
 		CEFCB1D919828614008D0CCF /* FTCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB1D819828614008D0CCF /* FTCrystalBall.m */; };
+		D8A966669F5A799B4B997281 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305B75F80663AC49CD2369F5 /* CoreText.framework */; };
+		E5447260318A587D8B3DE5AC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF841B8736D573A161FEA2 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18FF841B8736D573A161FEA2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		305B75F80663AC49CD2369F5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5CC7BCF34DE5EC0006C7988E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6E7F9151CC358FB5954C7A0A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AC312DF0416F90112C6C5EAC /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		CE97CDE81982695400A53374 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE97CDEB1982695400A53374 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE97CDED1982695400A53374 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +71,7 @@
 		CEC89D11198676BD0062F1E0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CEFCB1D719828614008D0CCF /* FTCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCrystalBall.h; sourceTree = "<group>"; };
 		CEFCB1D819828614008D0CCF /* FTCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCrystalBall.m; sourceTree = "<group>"; };
+		F589A502C238638FE5D6E0DF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,12 @@
 				CE97CDEE1982695400A53374 /* CoreGraphics.framework in Frameworks */,
 				CE97CDF01982695400A53374 /* UIKit.framework in Frameworks */,
 				CE97CDEC1982695400A53374 /* Foundation.framework in Frameworks */,
+				7ECDC8CF0E6051FA9B4C7B4B /* BuddyBuildSDK.framework in Frameworks */,
+				89995A00E29D2DF6F1E97DE9 /* AssetsLibrary.framework in Frameworks */,
+				D8A966669F5A799B4B997281 /* CoreText.framework in Frameworks */,
+				491EC85635C900CF5CC2086C /* CoreTelephony.framework in Frameworks */,
+				E5447260318A587D8B3DE5AC /* SystemConfiguration.framework in Frameworks */,
+				4D39764032FE0C9DCB48CCD6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +134,12 @@
 				CE97CDED1982695400A53374 /* CoreGraphics.framework */,
 				CE97CDEF1982695400A53374 /* UIKit.framework */,
 				CE97CE0A1982695400A53374 /* XCTest.framework */,
+				AC312DF0416F90112C6C5EAC /* BuddyBuildSDK.framework */,
+				5CC7BCF34DE5EC0006C7988E /* AssetsLibrary.framework */,
+				305B75F80663AC49CD2369F5 /* CoreText.framework */,
+				F589A502C238638FE5D6E0DF /* CoreTelephony.framework */,
+				18FF841B8736D573A161FEA2 /* SystemConfiguration.framework */,
+				6E7F9151CC358FB5954C7A0A /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -393,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
@@ -407,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
